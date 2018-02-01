@@ -1,19 +1,17 @@
 public class PrimeNumbers {
-    public static void main(String[] args) {
-        int currentNumber;
-        boolean question = false;
-        for (currentNumber = 2; currentNumber <=100; currentNumber++){
-            for (int i = 2; i < currentNumber; i++){
-                if (currentNumber % i != 0){
+    public static void primeNumbers(int number){
+    boolean question = false;
+        for (number = 2; number <=100; number++) {
+            for (int i = 2; i < number; i++) {
+                if (number % i != 0) {
                     question = true;
-                }
-                else{
+                } else {
                     question = false;
                     break;
                 }
             }
-            if (question){
-                System.out.println(currentNumber);
+            if (question) {
+                System.out.println(number);
             }
         }
     }
